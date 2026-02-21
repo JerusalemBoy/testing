@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Git Auto-Deployment | AWS EC2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1f4e79, #0f3057);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .pipeline {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            margin-bottom: 40px;
+        }
+
+        .pipeline h2 {
+            color: #1f4e79;
+        }
+
+        .pipeline p {
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+
+        .highlight {
+            color: #28a745;
+            font-weight: bold;
+        }
+
+        .update {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #ff5733;
+        }
+
+        img {
+            margin-top: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        footer {
+            background-color: #1f4e79;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Git Auto-Deployment Pipeline</h1>
+        <p>Live DevOps Project on AWS EC2 using Native Git & Nginx</p>
+    </header>
+
+    <div class="container">
+
+        <div class="pipeline">
+            <h2>Deployment Architecture</h2>
+
+            <p>
+                VS Code → Git Push → EC2 Bare Repository → Post-Receive Hook → Nginx → Live Website
+            </p>
+
+            <p class="update">
+                Every <span class="highlight">git push production main</span> triggers automatic deployment.
+            </p>
+        </div>
+
+        <img src="/joel.jpg" alt="Joel DevOps Project" height="400">
+
+    </div>
+
+    <footer>
+        Built by <strong>Richard Joel</strong> | DevOps Project 2026 | AWS EC2 + Git Hooks + Nginx
+    </footer>
+
+</body>
+</html>
